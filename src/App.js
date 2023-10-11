@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import './App.css';
+import './index.css'
 export default function App() {
   const [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
@@ -32,8 +34,8 @@ let reload=()=>{
   return (
     <div className="App">
       <div className="container">
-        <h2>BMI calculator</h2>
-        <form onSubmit={calBmi}>
+        <h2 className="heading">BMI calculator</h2>
+        <form className="body" onSubmit={calBmi}>
           <div>
             <label>Weight(ibs)</label>
             <input
