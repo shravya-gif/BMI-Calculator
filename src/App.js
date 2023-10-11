@@ -34,8 +34,9 @@ let reload=()=>{
   return (
     <div className="App">
       <div className="container">
-        <h2 className="heading">BMI calculator</h2>
+      
         <form className="body" onSubmit={calBmi}>
+        <h2 className="heading">BMI calculator</h2>
           <div>
             <label>Weight(ibs)</label>
             <input
@@ -46,7 +47,7 @@ let reload=()=>{
             ></input>
           </div>
           <div>
-            <label>height(in)</label>
+            <label>Height (in)</label>
             <input
               type="text"
               placeholder="Enter height value"
@@ -58,7 +59,7 @@ let reload=()=>{
             <button className="btn" type="submit">
               Submit
             </button>
-            <button className="btn btn-outline" onClick={reload} type="submit">
+            <button className="btn btn2 btn-outline" onClick={reload} type="submit">
               Reload
             </button>
           </div>
